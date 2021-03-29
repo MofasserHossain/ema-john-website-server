@@ -66,4 +66,4 @@ client.connect((err) => {
   });
 });
 
-app.listen(port, () => console.log(`Listening to ${port}`));
+app.listen(process.env.PORT || port, () => console.log(`Listening to ${port}`));
